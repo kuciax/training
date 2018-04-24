@@ -1,12 +1,11 @@
 package com.company;
 
 
-import com.company.enums.EnumUtils;
-import com.company.factorials.Factorial;
-import com.company.fizzBuzzTest.FizzBuzzTest;
-import com.company.strings.StringUttils;
+import com.company.linkedlist.LinkedListImpl;
+import com.company.stackandqueues.QueueImpl;
 
 import java.util.List;
+import java.util.Queue;
 import java.util.Random;
 import java.util.stream.Collectors;
 import java.util.stream.Stream;
@@ -24,6 +23,32 @@ public class Main {
         // System.out.println(StringUttils.reverseString("abcd"));
         //System.out.println(StringUttils.reverseAllLettersInSentence("new StringUtils method"));
         // System.out.println(StringUttils.isPalindrome("kajak"));
+        //Array array = new Array(10);
+        //array.setRandomNums(5, 10);
+        //array.printArray();
+        //array.bubbleSort();
+        //array.printArray();
+        // Array array = new Array(10);
+        //array.setRandomNums(1,100);
+        //array.printArray();
+        //System.out.println("*************");
+        //ArrayUtils.quickSort(array.getInts(),0,9);
+        //array.printArray();
+//        LinkedListImpl linkedList = new LinkedListImpl();
+//        linkedList.apped(1);
+//        linkedList.apped(2);
+//        linkedList.apped(3);
+//        linkedList.apped(4);
+//        linkedList.printList();
+//        System.out.println("*********************");
+//        System.out.println("1:"+linkedList.getValueOf(1));
+//        System.out.println(linkedList.getValueOf(5));
+//
+        QueueImpl queue = new QueueImpl();
+        queue.add(2);
+        queue.add(3);
+        queue.printList();
+
 
     }
 
