@@ -1,14 +1,18 @@
 package com.company.tries;
 
 
+import java.io.FileNotFoundException;
+
 public class Application {
 
     public static void main(String[] args) {
-        Trie trie = new Trie();
-        //trie.insertFromFile("C:\\Users\\kucia\\Desktop\\slowa.txt");
-        trie.insert("aaaa");
-        trie.insert("bbbb");
-        System.out.println(trie.exists("2222"));
+        TrieT9 trieT9 = new TrieT9();
+        try {
+            trieT9.insertFromFile("C:\\Users\\kucia\\Desktop\\slowa.txt");
+        } catch (FileNotFoundException e) {
+            e.printStackTrace();
+        }
+        trieT9.getMatchedWords("");
 
 
     }
